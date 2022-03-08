@@ -3,11 +3,12 @@
 <html>
 
 <meta charset="UTF-8">
+<meta lang="en">
 <meta name="description" content="Little test website.">
 
 <head>
 	<link rel="stylesheet" href="style.css" as="style">
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<!--<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	<title> Home </title>
 </head>
@@ -15,11 +16,20 @@
 <body>
 	<div id="bio">
 		<h1> Biography </h1>
-		<p> I'm currently a graduate student in Financial Engineering at HEC Montreal. </p>
+		<p> 
+			I'm currently a graduate student in Financial Engineering at HEC Montreal. 
+			I like working with mathematical models and computational finance. 
+		</p>
+		<p>
+			This website exists for me to share my interests and the projects I am working on. 
+			Feel free to take a look and contact me if you have any questions about something I did.
+		</p>
 	</div>
 
 	<div id="code">
-		<p> I know these technologies : </p>
+		<p> 
+			I love working with computers and these are the technologies I use for work and for fun : 
+		</p>
 		<!-- 
 		<img src="images/R_logo.svg" alt="R_logo" height=20rem width=20rem>
 		<img src="images/Py_logo.png" alt="Python_logo" height=20rem width=20rem>
@@ -27,12 +37,20 @@
 		<img src="images/Latex_logo.png" alt="LaTeX_logo" height=20rem width=30rem>
 		-->
 		<ul> 
-			<li> R </li>
-			<li> Python </li>
-			<li> Matlab </li>
-			<li> \(\LaTeX\) </li>
+			<li> <a class ="h-links" href="https://www.r-project.org/" target="_blank"> R </a> </li>
+			<li> <a class ="h-links" href="https://www.python.org/" target="_blank"> Python </a> </li>
+			<li> <a class ="h-links" href="https://www.mathworks.com/products/matlab.html" target="_blank"> Matlab </a> </li>
+			<li> <a class ="h-links" href="https://www.latex-project.org/" target="_blank"> \(\LaTeX\) </a> </li>
 		</ul>
 	</div> 
+
+	<div>
+		<em>
+			Please note that even there are libraries/packages that can "translate" code from one language to another; 
+			such as <a class="h-links" href="https://rstudio.github.io/reticulate/" target="_blank"> <strong> reticulate </strong> </a> which does Python to R; 
+			they may not work the way it was intended to work and should not be relied upon blindly.
+		</em>
+	</div>
 </body>
 
 </html>
