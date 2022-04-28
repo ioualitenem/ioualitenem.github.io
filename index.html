@@ -9,6 +9,7 @@
 <head>
 	<link rel="stylesheet" href="style.css" as="style">
 	<title> Home </title>
+	<base target="_blank">
 </head>
 
 <body>
@@ -23,8 +24,8 @@
 	<div id="bio">
 		<h2> Biography </h2>
 		<p> 
-			I'm currently a graduate student in Financial Engineering at HEC Montreal. 
-			I like reading about new mathematical models and replicating new scientific papers. 
+			I'm currently a Financial Engineering graduate student at HEC Montreal. 
+			I like reading about new mathematical models for finance and replicating new scientific papers. 
 		</p>
 		<p>
 			This website exists for me to share my interests and the projects I am working on.
@@ -32,9 +33,65 @@
 		</p>
 	</div>
 
+	<div id="projects"> 
+		<h2> Personal Projects </h2>
+		<h3> MSGARCH & GAS on HF Data </h3>
+		<h4> <i> Work in progress </i> </h4>
+		<p>
+			A research note on the application of Markov Switching GARCH models 
+		</p>
+		<p>
+			(<a class="h-links" href="https://cran.r-project.org/web/packages/MSGARCH/index.html"> <strong> MSGARCH </strong> </a>) 
+			and Generalized Autoregressive Score models 
+			(<a class="h-links" href="https://cran.r-project.org/web/packages/GAS/index.html"> <strong> GAS </strong> </a>)
+			on high-frequency data of a panel of different assets. 
+		<p>
+			This project will act as my supervised project for my masters degree and posted when finished.
+		</p>
+
+		<hr width=auto size="1em">
+
+		<h3> Black-Scholes-Merton Model Summary </h3>
+		<h4> <i> Work in progress </i> </h4>
+		<p>
+			A paper summarizing & simplifying the Black-Scholes-Merton valuation formula.
+		</p>
+		<p>
+			It is a paper aimed at helping people use and/or code the formula while getting the gist of its assumptions,
+			derivations, limitations and extensions. 
+			It also doubles as a way for me to review litterature about one of the most
+			used models of our times and dig deeper into its strength and weaknesses in order to read on better models. 
+		</p>
+		<p>
+			It will be posted on this website when finished.
+		</p>
+
+		<hr width=auto size="1em">
+
+		<h3> WildCard Option Valuation </h3>
+		<h4> <i> Currently being cleaned </i> </h4>
+		<p>
+			This project was made in collaboration with my good friends : Dimitri Arcé & Édouardo Magini. 
+		</p>
+		<p>
+			A small project on the valuation of a WildCard Option on the 
+			<a class="h-links" href="https://www.m-x.ca/en/markets/interest-rate-derivatives/lgb"> LGB </a> 
+			contract launched by <a class="h-links" href="https://www.tmx.com/"> TMX </a> in Fall 2021. 
+			The idea was to replicate the spot rate term structure by using the CIR++ model proposed by Brigo & Mercurio
+			<a class="h-links" href="https://link.springer.com/book/10.1007/978-3-540-34604-3"> (2006) </a> 
+			using an exact simulation (Glasserman 
+			<a class="h-links" href="https://link.springer.com/book/10.1007/978-0-387-21617-1"> 2003) </a>
+			and pricing the option using the formulas from Kane & Marcus 
+			<a class="h-links" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=278028"> (1986) </a>. 
+		</p>
+		<p>
+			A report is currently being translated and will be posted alongside a Python script.
+		</p>
+	</div>
+
 	<div id="code">
 		<p> 
-			My hobby is working with computers and these are the technologies I use for work and for fun : 
+			One of my hobbies is playing with computers and these are the technologies I use for work or for fun : 
 		</p>
 		<!-- 
 		<img src="images/R_logo.svg" alt="R_logo" height=20rem width=20rem>
@@ -43,48 +100,51 @@
 		<img src="images/Latex_logo.png" alt="LaTeX_logo" height=20rem width=30rem>
 		-->
 		<ul> 
-			<li> <a class ="h-links" href="https://www.r-project.org/" target="_blank"> R </a> </li>
-			<li> <a class ="h-links" href="https://www.python.org/" target="_blank"> Python </a> </li>
-			<li> <a class ="h-links" href="https://www.mathworks.com/products/matlab.html" target="_blank"> Matlab </a> </li>
-			<li> <a class ="h-links" href="https://www.latex-project.org/" target="_blank"> LaTeX </a> </li>
+			<li> <a class ="h-links" href="https://www.r-project.org/"> R </a> </li>
+			<li> <a class ="h-links" href="https://www.python.org/"> Python </a> </li>
+			<li> <a class ="h-links" href="https://www.mathworks.com/products/matlab.html"> Matlab </a> </li>
+			<li> <a class ="h-links" href="https://www.latex-project.org/"> LaTeX </a> </li>
 		</ul>
 
 		<p>
-			I also know these languages which I occasionnaly use to for non-finance related projects :
+			These languages are those I occasionnaly use for non-finance related projects :
 		</p>
 		<ul> 
-			<li> <a class ="h-links" href="https://en.wikipedia.org/wiki/HTML5" target="_blank"> HTML5 </a> </li>
-			<li> <a class ="h-links" href="https://www.w3.org/TR/CSS/#intro" target="_blank"> CSS </a> </li>
-			<li> <a class ="h-links" href="https://en.wikipedia.org/wiki/Visual_Basic_for_Applications" target="_blank"> VBA </a> </li>
-			<li> <a class ="h-links" href="https://www.cplusplus.com/" target="_blank"> C++ </a> </li>
+			<li> <a class ="h-links" href="https://en.wikipedia.org/wiki/HTML5"> HTML5 </a> </li>
+			<li> <a class ="h-links" href="https://www.w3.org/TR/CSS/#intro"> CSS </a> </li>
+			<li> <a class ="h-links" href="https://en.wikipedia.org/wiki/Visual_Basic_for_Applications"> VBA </a> </li>
+			<li> <a class ="h-links" href="https://www.cplusplus.com/"> C++ </a> </li>
 		</ul>
 
 	<p>
 		<!-- Don't forget, programming is only hard when you first learn its syntax and the vocabulary that comes with it.
 		When you get ahold of the programmer mindset, you can learn any languages. -->
 	</p>
-	</div> 
-
-	<div id="projects"> 
-		<h2> Personal Projects </h2>
-		<p>
-			I am currently working on a paper summarizing & simplifying the Black-Scholes-Merton valuation formula.
-			It is a paper aimed at helping people use and/or code the formula while getting the gist of its assumptions,
-			derivations, limitations and extensions. 
-		</p>
-		<p>
-			Concurrently, I am working on an efficient R package about option pricing using sophisticated methods that can be
-			found in mathematical finance litterature.
-		</p>
+	<p>
 		<em>
 			Please note that some libraries/packages that can "translate" code from one language to another exist; 
-			such as <a class="h-links" href="https://rstudio.github.io/reticulate/" target="_blank"> <strong> reticulate </strong> </a> which does Python to R; 
-			they may not work the way it was intended to work and should not be relied upon blindly.
+			such as <a class="h-links" href="https://rstudio.github.io/reticulate/"> <strong> reticulate </strong> </a> which does Python to R; 
+			however, they may not work the way it was intended to work and should not be relied upon blindly.
 		</em>
-	</div>
+		</p>
+	</div> 
 
+	<!--
+	<div>
+		<h2> Recommended Books </p>
+	</div>
+	-->
+	
 	<div id="notes">
 		<h2> Benchmark of the website</h2>
+		<p>
+			I coded this website myself using only HTML & CSS. The idea was to make this website as light as possible
+			without any cookies, font packages or JavaScript. It can be opened on any device and any internet speed.
+		</p>
+		<p>
+			This optimization project was inspired by my good tech-savy friend : 
+			<a class="h-links" href="https://archetipico.github.io/"> Edoardo Ferrari. </a>
+		</p>
 		<p>
 			TBD
 		</p>
